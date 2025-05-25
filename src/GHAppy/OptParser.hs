@@ -45,7 +45,8 @@ pSettings =
     pOutputFile = strOption (long "outFile" <> short 'f' <> metavar "OUTFILE")
     pRepository = strOption (long "repo" <> short 'r')
     pUserAgent = strOption (long "user" <> short 'u')
+    --  Pointing to this change - https://github.com/mlabs-haskell/audit-report-template/pull/3
     pPandocTemplateUrl =
       strOption (long "pandoc template url" <> short 't')
-        <|> pure "https://raw.githubusercontent.com/KristianBalaj/audit-report-template/refs/heads/master/linked-files/templates/latex.tpl"
+        <|> pure "https://raw.githubusercontent.com/mlabs-haskell/audit-report-template/faf724642768ff8c45c11d61c7a9c0ae49fa4e69/linked-files/templates/latex.tpl"
     pPreambleLocation = strOption (long "preamble location" <> short 'p') <|> pure ("." </> "preamble" <.> "yaml")
