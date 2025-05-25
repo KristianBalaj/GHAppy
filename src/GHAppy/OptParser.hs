@@ -47,5 +47,5 @@ pSettings =
     pUserAgent = strOption (long "user" <> short 'u')
     pPandocTemplateUrl =
       strOption (long "pandoc template url" <> short 't')
-        <|> pure "https://raw.githubusercontent.com/mlabs-haskell/audit-report-template/master/linked-files/templates/latex.tpl"
+        <|> pure "https://raw.githubusercontent.com/KristianBalaj/audit-report-template/refs/heads/master/linked-files/templates/latex.tpl"
     pPreambleLocation = strOption (long "preamble location" <> short 'p') <|> pure ("." </> "preamble" <.> "yaml")
